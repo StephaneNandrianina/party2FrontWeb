@@ -1,0 +1,48 @@
+.ListeUtilisateurs {
+    margin: 20px;
+  }
+  
+  .ListeUtilisateurs h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .BlockUtilisateur {
+    padding: 10px;
+    padding-left: 2%;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex; /* Pour aligner la photo de profil et le nom utilisateur */
+    align-items: center; /* Pour aligner la photo de profil et le nom utilisateur */
+    border-bottom: #d4d1d1 1px solid;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .PhotoProfil {
+    width: 60px;
+    height: 60px;
+    background-color: #ccc;
+    border-radius: 50%; /* Pour rendre la photo de profil circulaire */
+    margin-right: 4%;
+  }
+  
+  .nomUtilisateur {
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .h4{
+    background-color: #144274;
+    color: #fff;
+    text-align: center;
+    height: 50px;
+    padding-top: 10px;
+  }
+  
+  .Mere{
+    margin-top: 10px;
+  }
+  

@@ -1,0 +1,89 @@
+
+  
+.sticky-input-row {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+  
+.sticky-input input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+  
+.sticky-input button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.sticky-input button:hover {
+    background-color: #0056b3;
+}
+
+.sticky-title {
+    position: sticky;
+    top: 0;
+    background-color: #144274;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 1; 
+    width: 100%; 
+    left: 0;
+    right: 0;
+  }
+
+  /* Ajoutez ces styles dans votre fichier de style CSS */
+.align-right {
+  text-align: center;
+  background-color: #a7b6c7;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 70%;
+  margin-right: 2%;
+  min-height: 60px;
+  padding-top: 0.5%;
+}
+
+.align-left {
+  text-align: center;
+  background-color: #ebeff3;
+  color: black;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-right: 70%;
+  margin-left: 2%;
+  min-height: 60px;
+  padding-top: 0.5%;
+}
+
+.scrollable-box-container {
+  height: 550px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 20px;
+}
+
+
+
+

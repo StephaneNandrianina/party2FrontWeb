@@ -33,7 +33,7 @@ const Login = () => {
         const lieu = { nomUtilisateur, mdp }; 
     
         try {
-            const response = await fetch('https://projsbmrrj1-production.up.railway.app/utilisateurs/verifierUser', {
+            const response = await fetch('http://projsbmrrj1-production.up.railway.app/utilisateurs/verifierUser', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(lieu),
