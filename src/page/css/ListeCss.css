@@ -1,0 +1,29 @@
+/* Style de la liste non ordonnée */
+ul {
+    list-style-type: disc; /* Style de la puce (cercle plein) */
+    margin: 20px 0; /* Marge autour de la liste */
+    padding: 0; /* Supprime le rembourrage par défaut de la liste */
+  }
+  
+  /* Style de la liste ordonnée */
+  ol {
+    list-style-type: decimal; /* Style du numéro (chiffres) */
+    margin: 20px 0; /* Marge autour de la liste */
+    padding: 0; /* Supprime le rembourrage par défaut de la liste */
+  }
+  
+  /* Style des éléments de la liste */
+  li {
+    margin-bottom: 5px; /* Marge en bas de chaque élément de liste */
+  }
+  
+  /* Exemple de style supplémentaire pour une liste horizontale */
+  ul.horizontal-list {
+    list-style-type: none; /* Supprime les puces */
+    display: flex; /* Utilise la disposition flexbox pour une liste horizontale */
+  }
+  
+  ul.horizontal-list li {
+    margin-right: 10px; /* Marge à droite entre les éléments de la liste horizontale */
+  }
+  

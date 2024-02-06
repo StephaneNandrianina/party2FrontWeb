@@ -1,0 +1,92 @@
+.contenair{
+    background-color: rgb(237, 237, 247);
+    padding-left: 3%;
+    height: 65px;
+}
+
+
+.Ulheader{
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+li {
+    margin-left: 10%;
+}
+
+.Liste{
+    display: flex;
+    gap: 2%;
+}
+
+.Liste1{
+    width: 30%;
+}
+.Liste1 li{
+    height: 80%;
+}
+
+.Ecriture{
+    padding-left: 33%;
+    height: 2%;
+}
+
+.contenair a{
+    color: black !important;
+    text-decoration: none !important;
+}
+
+.footer a{
+    color: black !important;
+    text-decoration: none !important;
+}
+
+/* Footer */
+.footer{
+    background-color: rgb(237, 237, 247);
+    margin-top: auto;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.Text{
+    padding-bottom: 3%;
+}
+
+.Liste {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin-left: 23%;
+    padding-bottom: 1%;
+}
+
+.Liste1 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.Liste1 li {
+    margin-right: 15px;
+    white-space: nowrap; /* Prevent the li from breaking to the next line */
+}
+
+.ligne hr {
+    margin: 10px auto !important; /* Center the hr within the .footer */
+    width: 65%; /* Set the desired width of the hr */
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.TextDuBas{
+    font-family: 'Century Gothic';
+    font-size: small;
+    margin-bottom: 10px;
+}

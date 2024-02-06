@@ -1,0 +1,24 @@
+.produit{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; 
+    justify-content: flex-start;
+    width: 80%;
+    float: left;
+}
+
+.droite{
+    width: 20%;
+    float: right;
+    text-align: left;
+}
+
+.texte{
+    width: 100%;
+    margin-left: 5%;
+}
+
+.footer{
+    float: right;
+    width: 100%;
+}

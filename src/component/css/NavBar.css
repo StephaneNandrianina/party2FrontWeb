@@ -1,0 +1,54 @@
+/* NavBar.css */
+.conteneur {
+    border: 2px solid rgb(223, 223, 235); 
+    box-shadow: 0 4px 8px rgba(0.1, 0.1, 0.1, 0.2);
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 10px;
+    margin-right: 20%;
+    border-bottom-right-radius: 2%;
+    border-top-right-radius: 2%;
+}
+
+.NavListe {
+    list-style-type: none; /* Supprimer les puces des listes */
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.Chaque {
+    margin-bottom: 2px; /* Espacement entre chaque lien */
+    margin-left: 0px;
+    padding-left: 10px;
+}
+
+.Chaque a {
+    text-decoration: none; /* Supprimer la décoration du lien */
+    font-size: 15px; /* Taille du texte */
+    padding: 10px; /* Rembourrage autour du texte */
+    border-radius: 5px; /* Coins arrondis */
+    display: block; /* Pleine largeur pour les liens */
+    transition: background-color 0.3s ease; /* Transition de couleur de fond */
+    color: #555;
+}
+
+.Chaque a:hover {
+    background-color: rgb(237, 237, 247); /* Couleur de fond au survol */
+    color: rgb(14, 13, 13);
+    /* font-size: 16px; */
+    text-decoration: none;
+}
+
+.EnTeteMenu{
+    color: rgb(136, 111, 111);
+    margin: 0;
+    text-align: center;
+    background-color: rgb(213, 213, 219);
+    height: 44px;
+    padding-top: 8px;
+    font-size: 21px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}

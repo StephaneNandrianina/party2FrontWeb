@@ -1,0 +1,29 @@
+.ChaqueDiv{
+    border: 2px solid rgb(223, 223, 235); 
+    box-shadow: 0 4px 8px rgba(0.1, 0.1, 0.1, 0.2);
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 10px;
+    margin-right: 20%;
+    border-bottom-right-radius: 2%;
+    border-top-right-radius: 2%;
+}
+
+.DivList li{
+    list-style: none;
+    display: inline-block;
+}
+
+li{
+    list-style: none;
+}
+
+.Val input{
+    width: 100%;
+    background-color: rgb(237, 237, 247);
+    height: 60px;
+    border-radius: 2px;
+    margin-right: 20%;
+}

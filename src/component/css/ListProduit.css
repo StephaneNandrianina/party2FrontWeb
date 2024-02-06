@@ -1,0 +1,20 @@
+.tout{
+    width: 25%;
+    text-align: center;
+}
+
+.SousImage1{
+    text-align: center;
+    display: flex;
+}
+
+.SousImage{
+    margin-left: 20%;
+    text-align: center;
+}
+
+.menu{
+    height: 300px;
+    border: 1px solid black; 
+    padding-left: 10%;
+}
