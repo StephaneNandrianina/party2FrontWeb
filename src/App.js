@@ -14,6 +14,8 @@ import Chart from './page/ChartPage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ListeDesVit from './page/ListeBoiteDeVitessePage';
 import ListeDesMar from './page/ListeMarquePage';
+import { Utilisateur } from './page/ListeUtilisateurPage';
+import { MessagePar } from './page/MessageParent';
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
           <Route path='/ListeMarque' element = {<ListeDesMar/> }></Route>
           <Route path='/AnnonceAValider' element = {<AnnonceAValider/> }></Route>
           <Route path='/statistic' element = {<Chart/> }></Route>
+          <Route path='/ListeUtilisateurMessage' element = {<Utilisateur/> }></Route>
+          <Route path='/Message' element = {<MessagePar/> }></Route>
         </Routes>
       </BrowserRouter>
     </div>
