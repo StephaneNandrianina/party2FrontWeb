@@ -9,7 +9,10 @@ export function NavBar() {
             <div className="conteneur">
                 <ul className="NavListe">
                     <li className='EnTeteMenu'>Menu</li>
+                    <li className='Chaque'><Link to="#">Accueil</Link></li>
                     <li className='Chaque'><Link to="/ListeUtilisateurMessage">Message</Link></li>
+                    <li className='Chaque'><Link to="#">Recherche avancé</Link></li>
+                    <li className='Chaque'><Link to="#">Historique des annonces</Link></li>
                 </ul>
             </div>
         </>
