@@ -40,7 +40,7 @@ export function TousAnnonces({ liste }) {
             <div>
                 {listeAnnonce.map(liste => (
                     liste.etatAnnonce === 0 && (
-                        <div key={liste.idAnnonce} style={{  border: '1px solid none ',padding: '10px', borderRadius: '8px',marginLeft:'-60px',marginTop:'30px',backgroundColor:'whitesmoke' }}>
+                        <div key={liste.idAnnonce} style={{  border: '1px solid ',padding: '10px', borderRadius: '8px',marginLeft:'-60px',marginTop:'30px',backgroundColor:'whitesmoke' }}>
                             <ul >
                                 <div style={{textAlign:'center',marginLeft:'-100px'}}>
                                     <li>{liste.description}</li>

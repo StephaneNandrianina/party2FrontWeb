@@ -205,6 +205,7 @@ export function RechercheFonction() {
         </form>
         
         {Data !== [] && 
+
             Data.map(liste => (
                 <>
                     <div>
