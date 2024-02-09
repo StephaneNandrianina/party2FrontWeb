@@ -1,6 +1,6 @@
 import {Header , Footer} from './../component/Header';
 import { RechercheFonction } from './../component/RechercheComponent';
-import {NavBar} from '../component/NavBar';
+import {NavBar} from '../component/NavBarFront';
 
 function Recheche(){
     return(

@@ -1,6 +1,6 @@
 import {Header , Footer} from './../component/Header';
 import './css/AppAffichage.css';
-import {NavBar} from '../component/NavBar';
+import {NavBar} from '../component/NavBarFront';
 import { TousAnnonces } from '../component/Annonce';
 
 export function AffichageAnnonce(){
