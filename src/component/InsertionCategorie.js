@@ -11,7 +11,7 @@ const InsertionCategorie = () => {
         e.preventDefault()
         const carb = {nomCategorie}
         console.log(carb)
-        fetch('https://projsbmrrj1-production.up.railway.app/categories/create' , {
+        fetch('https://2emvaguesprojo-production.up.railway.app/categories/create' , {
         method:"POST",
         headers : {"Content-Type":"application/json"},
         body : JSON.stringify(carb)

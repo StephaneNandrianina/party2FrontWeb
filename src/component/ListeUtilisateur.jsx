@@ -6,7 +6,7 @@ export const ListeUtilisateur = () => {
     const [ListeUtile, setListeUtile] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:8081/utilisateurs/')
+        fetch('https://2emvaguesprojo-production.up.railway.app/utilisateurs/')
             .then(res => res.json())
             .then((result) => {
                 setListeUtile(result);

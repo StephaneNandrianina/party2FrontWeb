@@ -7,7 +7,7 @@ export function TousAnnonces({ liste }) {
     const [listeAnnonce, setListeAnnonce] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:8081/annonces/listeAnnoncePhoto')
+        fetch('https://2emvaguesprojo-production.up.railway.app/annonces/listeAnnoncePhoto')
             .then(res => res.json())
             .then((result) => {
                 setListeAnnonce(result);
@@ -20,7 +20,7 @@ export function TousAnnonces({ liste }) {
     }
 
     const mettreFavorie = (id) => {
-        fetch('http://localhost:8081/favories/mettreFavorie/' + id + '/1', {
+        fetch('https://2emvaguesprojo-production.up.railway.app/favories/mettreFavorie/' + id + '/1', {
             method: "POST"
         })
     };

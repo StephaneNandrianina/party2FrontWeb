@@ -7,7 +7,7 @@ const MyChartComponent = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch('https://projsbmrrj1-production.up.railway.app/vente-par-mois')
+        fetch('https://2emvaguesprojo-production.up.railway.app/vente-par-mois')
             .then(response => response.json())
             .then(data => setData(data))
             .catch(error => console.error('Erreur lors de la récupération des données', error));

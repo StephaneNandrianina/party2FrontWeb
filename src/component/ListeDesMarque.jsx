@@ -5,7 +5,7 @@ import '../assets/bootstrap/css/bootstrap.min.css';
 export function ListeDesMarque() {
     const[ListeDesMarque, setListeDesMarque] =useState([])
     useEffect(()=>{
-        fetch('https://projsbmrrj1-production.up.railway.app/marques')
+        fetch('https://2emvaguesprojo-production.up.railway.app/marques')
         .then(res=>res.json())
         .then((result)=>{
             setListeDesMarque(result);

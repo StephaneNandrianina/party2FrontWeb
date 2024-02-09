@@ -33,7 +33,7 @@ const Login = () => {
         const lieu = { nomUtilisateur, mdp }; 
     
         try {
-            const response = await fetch('http://localhost:8081/utilisateurs/verifierUser', {
+            const response = await fetch('https://2emvaguesprojo-production.up.railway.app/utilisateurs/verifierUser', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(lieu),

@@ -6,7 +6,7 @@ export function ListeLieu() {
   const[ListeLieu,setListeLieu] = useState([])
 
   useEffect(()=>{
-    fetch('https://projsbmrrj1-production.up.railway.app/lieux')
+    fetch('https://2emvaguesprojo-production.up.railway.app/lieux')
     .then(res=>res.json())
     .then((result)=>{
       setListeLieu(result);

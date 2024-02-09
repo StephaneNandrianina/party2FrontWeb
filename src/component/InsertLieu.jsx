@@ -9,7 +9,7 @@ export function InsererLieu() {
     e.preventDefault()
     const lieu = {nomLieu}
     console.log(lieu)
-    fetch('https://projsbmrrj1-production.up.railway.app/lieux/create' , {
+    fetch('https://2emvaguesprojo-production.up.railway.app/lieux/create' , {
       method:"POST",
       headers : {"Content-Type":"application/json"},
       body : JSON.stringify(lieu)

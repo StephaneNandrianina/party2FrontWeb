@@ -6,7 +6,7 @@ export function Liste() {
   const[ListeCategorie,setListeCategorie] = useState([])
 
   useEffect(()=>{
-    fetch('https://projsbmrrj1-production.up.railway.app/categories')
+    fetch('https://2emvaguesprojo-production.up.railway.app/categories')
     .then(res=>res.json())
     .then((result)=>{
       setListeCategorie(result);

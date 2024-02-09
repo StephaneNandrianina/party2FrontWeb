@@ -5,7 +5,7 @@ import '../assets/bootstrap/css/bootstrap.min.css';
 export function ListeAnnonce() {
     const[ListeAnnonce, setListeAnnonce] =useState([])
     useEffect(()=>{
-        fetch('https://projsbmrrj1-production.up.railway.app/annonces/listesAnnnonces')
+        fetch('https://2emvaguesprojo-production.up.railway.app/annonces/listesAnnnonces')
         .then(res=>res.json())
         .then((result)=>{
             setListeAnnonce(result);

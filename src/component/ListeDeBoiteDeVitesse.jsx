@@ -5,7 +5,7 @@ import '../assets/bootstrap/css/bootstrap.min.css';
 export function ListeBoiteDevitesse() {
     const[ListeBoiteDevitesse, setListeBoiteDevitesse] =useState([])
     useEffect(()=>{
-        fetch('https://projsbmrrj1-production.up.railway.app/boiteDeVitesses')
+        fetch('https://2emvaguesprojo-production.up.railway.app/boiteDeVitesses')
         .then(res=>res.json())
         .then((result)=>{
             setListeBoiteDevitesse(result);

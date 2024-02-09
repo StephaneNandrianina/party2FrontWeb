@@ -7,7 +7,7 @@ export function ListeAnnonce() {
     const [nomMarque, setMarque] = useState('');
 
     useEffect(() => {
-        fetch('https://projsbmrrj1-production.up.railway.app/annonces/listeAnnonceAModifier')
+        fetch('https://2emvaguesprojo-production.up.railway.app/annonces/listeAnnonceAModifier')
             .then(res => res.json())
             .then((result) => {
                 setListeAnnonce(result);
@@ -15,7 +15,7 @@ export function ListeAnnonce() {
     }, []);
 
     const validerAnnonce = (idAnnonce) => {
-        fetch(`https://projsbmrrj1-production.up.railway.app/validationAnnonce/validerAnnonce/${idAnnonce}`, {
+        fetch(`https://2emvaguesprojo-production.up.railway.app/validationAnnonce/validerAnnonce/${idAnnonce}`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ nomMarque })

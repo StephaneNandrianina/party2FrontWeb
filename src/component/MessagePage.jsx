@@ -11,7 +11,7 @@ export const Message = () => {
   useEffect(() => {
     const getMessage = async () => {
       try {
-        const response = await fetch(`http://localhost:8081/messages/MessageDUnePersonne?idReceive=${idReceive}`, {
+        const response = await fetch(`https://2emvaguesprojo-production.up.railway.app/messages/MessageDUnePersonne?idReceive=${idReceive}`, {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${tokenValue}`,
@@ -37,7 +37,7 @@ export const Message = () => {
 
   const handleSendMessage = async (text) => {
     try {
-      const response = await fetch('http://localhost:8081/messages/envoyerMessage', {
+      const response = await fetch('https://2emvaguesprojo-production.up.railway.app/messages/envoyerMessage', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${tokenValue}`,
