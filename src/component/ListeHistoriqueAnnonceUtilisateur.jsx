@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import './css/Model.css';
 import '../assets/bootstrap/css/bootstrap.min.css';
-import '../component/css/ListeHistoriqueAnnonceUtilisateur.css'
 
 export function ListeHistoriqueAnnonceUtilisateur() {
-    const [ListeHistoriqueAnnonceUtilisateur, setListeHistoriqueAnnonceUtilisateur] = useState([]);
+    const [listeHistoriqueAnnonceUtilisateur, setListeHistoriqueAnnonceUtilisateur] = useState([]);
 
     useEffect(() => {
-        const fetchDropdownTypeDeVehicule = async () => {
+        const fetchAnnoncesUtilisateur = async () => {
             try {
                 const token = localStorage.getItem("token");
                 const requestOptions = {
@@ -16,13 +14,12 @@ export function ListeHistoriqueAnnonceUtilisateur() {
                         'Authorization': `Bearer ${token}`,
                         'Content-Type': 'application/json'
                     }
-                    
                 };
                 
                 const response = await fetch('http://localhost:8081/annonces/listeAnnoncePhotoParUtilisateur', requestOptions);
                 if (response.ok) {
-                    const options = await response.json();
-                    setListeHistoriqueAnnonceUtilisateur(options);
+                    const annonces = await response.json();
+                    setListeHistoriqueAnnonceUtilisateur(annonces);
                 } else {
                     console.error('Erreur lors de la requête HTTP:', response.statusText);
                 }
@@ -31,59 +28,62 @@ export function ListeHistoriqueAnnonceUtilisateur() {
             }
         };
 
-        fetchDropdownTypeDeVehicule();
+        fetchAnnoncesUtilisateur();
     }, []);
 
     return (
         <div className="container mt-5">
-            <h2>Historique des annonces par utilisateur</h2>
-            <div>
-                <table border='1px'>
-                    <tr>
-                        <th>idAnnonce</th>
-                        <th>date heure</th>
-                        <th>Description</th>
-                        <th>IMatricule</th>
-                        <th>nom Categorie</th>
-                        <th>nom Marque</th>
-                        <th>nom carburant</th>
-                        <th>nom model </th>
-                        <th>nom BoiteDevitesse</th>
-                        <th>nom Couleur</th>
-                        <th>nom utilisateur</th>
-                        <th>nom Lieu</th>
-                        
-                        <th>Annee</th>
-                        <th>Prix</th>
-                        <th>Pourcentage</th>
-                        <th>Etat annonce </th>
-                        <th>Photo voiture</th>
-                    </tr>
-                    {ListeHistoriqueAnnonceUtilisateur.map(liste => (
-                        <tr key={liste.idAnnonce}>
-                            <td>{liste.idAnnonce}</td>
-                            <td>{liste.dateHeure}</td>
-                            <td>{liste.description}</td>
-                            <td>{liste.imatricule}</td>
-                            <td>{liste.nomCategorie}</td>
-                            <td>{liste.nomMarque}</td>
-                            <td>{liste.nomCarburant}</td>
-                            <td>{liste.nomModel}</td>
-                            <td>{liste.nomBoiteDeVitesse}</td>
-                            <td>{liste.nomCouleur}</td>
-                            <td>{liste.nomUtilisteur}</td>
-                            <td>{liste.nomLieu}</td>
-                            <td>{liste.annee}</td>
-                            <td>{liste.prix}</td>
-                            <td>{liste.pourcentage}</td>
-                            <td>{liste.etatAnnonce}</td>
-                            <td>
-                                {liste.photoVoiture.map(photo => (
-                                    <img key={photo.idPhotoVoiture} src={photo.nomPhotoVoiture} alt="" style={{ width: '100px', height: 'auto' }} />
-                                ))}
-                            </td>
+            <h2 className="text-center mb-4">Historique des annonces par utilisateur</h2>
+            <div className="table-responsive">
+                <table className="table table-striped" border="1px">
+                    <thead className="thead-dark">
+                        <tr>
+                            <th>ID Annonce</th>
+                            <th>Date Heure</th>
+                            <th>Description</th>
+                            <th>IMatricule</th>
+                            <th>Catégorie</th>
+                            <th>Marque</th>
+                            <th>Carburant</th>
+                            <th>Modèle</th>
+                            <th>Boîte de Vitesse</th>
+                            <th>Couleur</th>
+                            <th>Utilisateur</th>
+                            <th>Lieu</th>
+                            <th>Année</th>
+                            <th>Prix</th>
+                            <th>Pourcentage</th>
+                            <th>État Annonce</th>
+                            <th>Photo Voiture</th>
                         </tr>
-                    ))}
+                    </thead>
+                    <tbody>
+                        {listeHistoriqueAnnonceUtilisateur.map(annonce => (
+                            <tr key={annonce.idAnnonce}>
+                                <td>{annonce.idAnnonce}</td>
+                                <td>{annonce.dateHeure}</td>
+                                <td>{annonce.description}</td>
+                                <td>{annonce.imatricule}</td>
+                                <td>{annonce.nomCategorie}</td>
+                                <td>{annonce.nomMarque}</td>
+                                <td>{annonce.nomCarburant}</td>
+                                <td>{annonce.nomModel}</td>
+                                <td>{annonce.nomBoiteDeVitesse}</td>
+                                <td>{annonce.nomCouleur}</td>
+                                <td>{annonce.nomUtilisteur}</td>
+                                <td>{annonce.nomLieu}</td>
+                                <td>{annonce.annee}</td>
+                                <td>{annonce.prix}</td>
+                                <td>{annonce.pourcentage}</td>
+                                <td>{annonce.etatAnnonce}</td>
+                                <td>
+                                    {annonce.photoVoiture.map(photo => (
+                                        <img key={photo.idPhotoVoiture} src={photo.nomPhotoVoiture} alt="" style={{ maxWidth: '100px', height: 'auto' }} className="img-fluid" />
+                                    ))}
+                                </td>
+                            </tr>
+                        ))}
+                    </tbody>
                 </table>
             </div>
         </div>
