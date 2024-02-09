@@ -16,6 +16,7 @@ import ListeDesVit from './page/ListeBoiteDeVitessePage';
 import ListeDesMar from './page/ListeMarquePage';
 import { Utilisateur } from './page/ListeUtilisateurPage';
 import { MessagePar } from './page/MessageParent';
+import {AffichageAnnonce } from './page/AnnoncePage' ;
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
           <Route path='/statistic' element = {<Chart/> }></Route>
           <Route path='/ListeUtilisateurMessage' element = {<Utilisateur/> }></Route>
           <Route path='/Message' element = {<MessagePar/> }></Route>
+          <Route path='/AffichageAnnonce' element = {<AffichageAnnonce/> }></Route>
         </Routes>
       </BrowserRouter>
     </div>
