@@ -12,7 +12,7 @@ export function NavBar() {
                     <li className='Chaque'><Link to="/AffichageAnnonce">Accueil</Link></li>
                     <li className='Chaque'><Link to="/ListeUtilisateurMessage">Message</Link></li>
                     <li className='Chaque'><Link to="/Recherche">Recherche avancé</Link></li>
-                    <li className='Chaque'><Link to="#">Historique des annonces</Link></li>
+                    <li className='Chaque'><Link to="/ListeHistoriqueAnnonceUtilisateur">Historique des annonces</Link></li>
                 </ul>
             </div>
         </>

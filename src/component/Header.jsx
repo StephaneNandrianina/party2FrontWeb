@@ -4,14 +4,14 @@ import '../assets/bootstrap/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
-const Deconnecter = async (e) => {
-    const navigate = useNavigate();
-    e.preventDefault();
-    localStorage.removeItem("token");
-    navigate('/');
-}
 
 export function Header() {
+    const navigate = useNavigate();
+    const Deconnecter = async (e) => {
+        e.preventDefault();
+        localStorage.removeItem("token");
+        navigate('/');
+    }
     return(
         <>
             <div className="row contenair">
