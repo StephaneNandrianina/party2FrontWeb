@@ -17,6 +17,7 @@ import ListeDesMar from './page/ListeMarquePage';
 import { Utilisateur } from './page/ListeUtilisateurPage';
 import { MessagePar } from './page/MessageParent';
 import {AffichageAnnonce } from './page/AnnoncePage' ;
+import LoginFront from './LoginFrontEnd';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <Route path='/ListeUtilisateurMessage' element = {<Utilisateur/> }></Route>
           <Route path='/Message' element = {<MessagePar/> }></Route>
           <Route path='/AffichageAnnonce' element = {<AffichageAnnonce/> }></Route>
+          <Route path='/LoginFront' element = {<LoginFront/> }></Route>
         </Routes>
       </BrowserRouter>
     </div>
