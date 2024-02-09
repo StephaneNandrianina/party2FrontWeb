@@ -3,7 +3,7 @@ import './css/TousAnnonceCss.css';
 import '../assets/bootstrap/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 
-export function TousAnnonces() {
+export function TousAnnonces(props) {
     const [listeAnnonce, setListeAnnonce] = useState([]);
 
     useEffect(() => {
@@ -18,6 +18,12 @@ export function TousAnnonces() {
         console.log(id);
         localStorage.setItem("idReceive", id);
     }
+
+    const mettreFavorie = (id) => { 
+        fetch('http://localhost:8081/favories/mettreFavorie/'+id+'/1' , {
+            method:"POST"
+        })
+    };
 
     return (
         <div className="container mt-5">
@@ -53,9 +59,7 @@ export function TousAnnonces() {
                                     </div>
                                 </Link>
                                 <div className='BoutonBleu'>
-                                    <button class="btn btn-primary">
-                                        Mettre favorie
-                                    </button>
+                                    <button className="btn btn-secondary" onClick={() => mettreFavorie(liste.idAnnonce)} style={{ margin: '10px', borderRadius: '5px' ,marginLeft:'-15px'}}> Mettre favorie</button>
                                 </div>
                             </ul>
                         </div>
