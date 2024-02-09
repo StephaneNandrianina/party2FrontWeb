@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './css/Model.css';
 import '../assets/bootstrap/css/bootstrap.min.css';
+import '../component/css/ListeHistoriqueAnnonceUtilisateur.css'
 
 export function ListeHistoriqueAnnonceUtilisateur() {
     const [ListeHistoriqueAnnonceUtilisateur, setListeHistoriqueAnnonceUtilisateur] = useState([]);
@@ -8,15 +9,16 @@ export function ListeHistoriqueAnnonceUtilisateur() {
     useEffect(() => {
         const fetchDropdownTypeDeVehicule = async () => {
             try {
-                const token = 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiaWRlbnRpZmlhbnQiOiIwIiwiaWF0IjoxNzA3NDYwMzcyLCJleHAiOjE3MDc4NjAzNzJ9.wz8Ko7lHVXBE2vOszUer3FrhIC0rl6aN5tQOAanJ7A7i0vr1TEdVZP03OYvHuWBgrIFb9RBG6bxh5B9bxCUWtA';
+                const token = localStorage.getItem("token");
                 const requestOptions = {
                     method: 'GET',
                     headers: {
                         'Authorization': `Bearer ${token}`,
                         'Content-Type': 'application/json'
                     }
+                    
                 };
-
+                
                 const response = await fetch('http://localhost:8081/annonces/listeAnnoncePhotoParUtilisateur', requestOptions);
                 if (response.ok) {
                     const options = await response.json();
@@ -50,11 +52,11 @@ export function ListeHistoriqueAnnonceUtilisateur() {
                         <th>nom Couleur</th>
                         <th>nom utilisateur</th>
                         <th>nom Lieu</th>
-                        <th>nom BoiteDevitesse</th>
+                        
                         <th>Annee</th>
                         <th>Prix</th>
                         <th>Pourcentage</th>
-                        {/* <th>Etat annonce </th> */}
+                        <th>Etat annonce </th>
                         <th>Photo voiture</th>
                     </tr>
                     {ListeHistoriqueAnnonceUtilisateur.map(liste => (
