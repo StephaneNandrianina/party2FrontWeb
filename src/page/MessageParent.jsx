@@ -1,7 +1,7 @@
 import { Message } from "../component/MessagePage";
 import './css/AppAffichage.css';
 import {NavBar} from '../component/NavBarFront';
-import {Header , Footer} from '../component/Header';
+import {Header , Footer} from '../component/HeaderFront';
 
 export const MessagePar = () => {
     return(

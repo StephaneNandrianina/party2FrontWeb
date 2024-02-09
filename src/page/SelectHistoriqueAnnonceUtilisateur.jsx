@@ -1,7 +1,7 @@
-import {Header , Footer} from '../component/Header';
+import {Header , Footer} from '../component/HeaderFront';
 import './css/AppAffichage.css';
 import {ListeHistoriqueAnnonceUtilisateur} from '../component/ListeHistoriqueAnnonceUtilisateur';
-import {NavBar} from '../component/NavBar';
+import {NavBar} from '../component/NavBarFront';
 
 function selectHistoriqueAnnonceUtilisateur(){
     return(

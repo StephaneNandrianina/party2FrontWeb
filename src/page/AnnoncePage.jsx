@@ -1,4 +1,4 @@
-import {Header , Footer} from './../component/Header';
+import {Header , Footer} from './../component/HeaderFront';
 import './css/AppAffichage.css';
 import {NavBar} from '../component/NavBarFront';
 import { TousAnnonces } from '../component/Annonce';
