@@ -17,6 +17,7 @@ import ListeDesMar from './page/ListeMarquePage';
 import { Utilisateur } from './page/ListeUtilisateurPage';
 import { MessagePar } from './page/MessageParent';
 import {AffichageAnnonce } from './page/AnnoncePage' ;
+import { ListeHistoriqueAnnonceUtilisateur } from './component/ListeHistoriqueAnnonceUtilisateur';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <Route path='/ListeUtilisateurMessage' element = {<Utilisateur/> }></Route>
           <Route path='/Message' element = {<MessagePar/> }></Route>
           <Route path='/AffichageAnnonce' element = {<AffichageAnnonce/> }></Route>
+          <Route path='/ListeHistoriqueAnnonceUtilisateur' element = {<ListeHistoriqueAnnonceUtilisateur/> }></Route>
         </Routes>
       </BrowserRouter>
     </div>
